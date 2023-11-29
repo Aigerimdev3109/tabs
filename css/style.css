@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    widows: 1300px;
+    margin: 0 auto;
+}
+body {
+    background: url(../img/1675449471_gas-kvas-com-p-fonovie-risunki-dlya-rabochego-stola-minim-1.jpg) no-repeat center/cover;
+    max-height: 100vh;
+}
+.card {
+    width: 200px;
+    height: 350px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 3px 13px;
+    border-radius: 20px;
+}
+.bts {
+    display: flex;
+    justify-content: space-around;
+}
+.main input {
+    display: none;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 150px;
+}
+.one{
+    margin: 80px  20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.snow h1 {
+    font-size: 20px;
+}
+.snow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.fa-snowman{
+  font-size: 20px;
+}
+.txt  p {
+    padding: 10px 6px;
+    color: rgb(84, 84, 84) ;
+}
+.txt-2 p {
+    padding: 6px 0;
+    color: rgba(33, 149, 15, 0.699);
+    font-size: 13px;
+}
+.txt-22 p {
+    padding: 10px 0;
+    color: rgba(33, 149, 15, 0.699);
+    font-size: 13px;
+}
+.one label {
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    padding: 0 0 0 50px;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    background: gainsboro;
+}
+.card img {
+    width: 210px;
+    height: 120px;
+    margin: 20px 0 20px  -6px;
+    border-radius: 10px;
+}
+.one label:hover {
+    color: rgb(255, 0, 85);
+}
+#phone:checked ~ .card-2,
+#phone:checked ~ .card-3,
+#phone:checked ~ .card-4{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#ipad:checked ~ .card-1,
+#ipad:checked ~ .card-3,
+#ipad:checked ~ .card-4{
+    opacity: 0;
+    transition: 0.4s;
+}
+#all:checked ~ .card-1,
+#all:checked ~ .card-2,
+#all:checked ~ .card-3,
+#all:checked ~ .card-4{
+    opacity: 1;
+    transition: 0.4s;
+}
+#dron:checked ~ .card-1,
+#dron:checked ~ .card-2,
+#dron:checked ~ .card-4{
+    opacity: 0;
+    transition: 0.4s;
+}
+#toys:checked ~ .card-1,
+#toys:checked ~ .card-2,
+#toys:checked ~ .card-3{
+    opacity: 0;
+    transition: 0.4s;
+}
